@@ -9,6 +9,16 @@ const GetParks = async (req, res) => {
   }
 }
 
+const GetParkDetails = async (req, res) => {
+  const parkId = req.params.waterPark_id
+  try {
+    const park = await ThemePark.findById(parkId)
+    res.send(park)
+  } catch (error) {
+    throw(error)
+  }
+}
+
 const CreatePark = async (req, res) => {
   try {
     const park = await WaterPark.create({ ...req.body })
