@@ -39,6 +39,7 @@ const DeletePark = async (req, res) => {
 
 module.exports = {
   GetParks,
+  GetParkDetails,
   CreatePark,
   DeletePark
 }
