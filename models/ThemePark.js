@@ -4,8 +4,6 @@ const themeParkSchema = new Schema(
   {
     name: { type: String, required: true },
     location: { type: String },
-    openingTime: { type: String },
-    noOfRides: { type: Number },
     mainAttraction: { type: String },
     description: { type: String },
     image: { type: String }

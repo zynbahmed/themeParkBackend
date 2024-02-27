@@ -5,8 +5,9 @@ const waterParkSchema = new Schema(
     name: { type: String, required: true },
     location: { type: String },
     openingTime: { type: String },
-    noOfRides: { type: Number },
+    noOfSlides: { type: Number },
     mainAttraction: { type: String },
+    parkTheme: {type: String},
     description: { type: String },
     image: { type: String }
   },
